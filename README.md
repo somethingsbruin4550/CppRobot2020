@@ -14,4 +14,4 @@ This should eventually mirror CompRobot2020
 ❌ LemonLight  
 ❌ Loader  
 ❌ Turret  
-❌ Yeeter  # CppRobot2020
+❌ Yeeter  
