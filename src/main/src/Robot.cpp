@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------*/
-/* Copyright (c) 2017-2018 FIRST. All Rights Reserved.                        */
+/* Copyright (c) 2017-2020 FIRST. All Rights Reserved.                        */
 /* Open Source Software - may be modified and shared by FRC teams. The code   */
 /* must be accompanied by the FIRST BSD license file in the root directory of */
 /* the project.                                                               */
@@ -16,7 +16,7 @@ void Robot::RobotInit() {
   m_chooser.AddOption(kAutoNameCustom, kAutoNameCustom);
   frc::SmartDashboard::PutData("Auto Modes", &m_chooser);
 
-  joystick = new frc::Joystick(0);
+  Logger::Debug("Hello 4550!", false);
 }
 
 /**
@@ -63,9 +63,13 @@ void Robot::AutonomousPeriodic() {
 
 void Robot::TeleopInit() {}
 
-void Robot::TeleopPeriodic() {
-  bool temp = joystick->GetRawButton(PilotMap::TRIGGER);
-}
+void Robot::TeleopPeriodic() {}
+
+void Robot::DisabledInit() {}
+
+void Robot::DisabledPeriodic() {}
+
+void Robot::TestInit() {}
 
 void Robot::TestPeriodic() {}
 
