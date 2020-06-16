@@ -12,8 +12,8 @@
 #include <frc/TimedRobot.h>
 #include <frc/smartdashboard/SendableChooser.h>
 
-#include "RobotMap.h"
-#include "Logger.h"
+#include "OI.h"
+#include "Chassis.h"
 
 class Robot : public frc::TimedRobot {
  public:
